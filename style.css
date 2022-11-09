@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.heading{
+    margin-left: 5px;
+    padding: 11px;
+    font-family: "Arial Black", sans-serif;
+    font-size: 65px;
+    position: absolute;
+    border: 2px solid red;
+    border-radius: 50px 20px;
+
+}
+
+body{
+    min-width: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-image: url("Angry Birds.png");
+
+}
+
+.bird{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+
+    margin-top: 22vh;
+}
+
+
+.head{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-color: red;
+    border-radius: 50%;
+    border: 5px solid black;
+    overflow: hidden;
+}
+
+.head:before{
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: wheat;
+    top:65%;
+    left:15%;
+}
+
+.tail-middle, .tail-top, .tail-bottom{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    clip-path: polygon(0 30%,100% 40%,100% 60%,0% 80%) ;
+    background-color: black;
+}
+
+.tail-middle{
+    top: 36%;
+    left:-17%
+}
+
+.tail-top{
+    top:30%;
+    left:-8%;
+    transform: rotate(35deg);
+}
+
+.tail-bottom{
+    top:44%;
+    left:-13%;
+    transform: rotate(-40deg);
+}
+
+.eyebrow-right{
+    position: absolute;
+    width: 140px;
+    height: 50px;
+    background-color: black;
+    top:23%;
+    right: 15%;
+    transform: rotate(-20deg);
+    z-index: 10;
+}
+
+.eyebrow-left{
+    position: absolute;
+    width: 140px;
+    height: 50px;
+    background-color: black;
+    top:23%;
+    left: 15%;
+    transform: rotate(20deg);
+    z-index: 10;
+}
+
+.eye-right{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid black;
+    top:30%;
+    right: 20%;
+    box-shadow: 1px 3px 40px 1px #393e46;
+}
+
+.eye-right::before{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: black;
+    top:28%;
+    left:25%;
+}
+
+.eye-right::after{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+    top:40%;
+    left:33%;
+}
+
+.eye-left{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid black;
+    top:30%;
+    left: 21%;
+    box-shadow: -2px 3px 40px 1px #393e46;
+}
+
+.eye-left::before{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: black;
+    top:28%;
+    left:25%;
+}
+
+
+.eye-left::after{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+    top:40%;
+    left:30%;
+}
+
+.beak{
+    position: absolute;
+    background-color: #ffac41;
+    height: 110px;
+    width: 110px;
+    border:3px solid black;
+    border-radius: 30% 5%;
+    transform:rotate(40deg) ;
+    top:55%;
+    left:40%;
+}
+
+.beak::before{
+    content: '';
+    position: absolute;
+    width: 146px;
+    border: 2px solid black;
+    transform: rotate(-45deg);
+    bottom:47%;
+    right:-21%
+}
+
+.hair{
+    position: absolute;
+    height: 110px;
+    width: 80px;
+    background-color: red;
+    border-radius: 50%;
+    transform: rotate(-45deg);
+    border: 3px solid black;
+    top:-67px;
+    left:44%;
+}
+
+.hair:before{
+    content: '';
+    position: absolute;
+    height: 110px;
+    width: 80px;
+    background-color: red;
+    border-radius: 50%;
+    transform: rotate(-30deg);
+    border: 3px solid black;
+    top:-30px;
+    left:-75%;
+}
+
+.name{
+    text-transform: uppercase;
+    padding: 40px;
+    margin-top: 80vh;
+    font-family: 'Grenze Gotisch', cursive;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
